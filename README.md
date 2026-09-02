@@ -14,16 +14,16 @@
 
 👉 [打开作品集网页 Demo](./index.html)
 
-### 交互体验视频（README 内直接播放）
+### 真实操作演示（README 内直接播放）
 
-下面的动画直接展示作品集的交互路径：配置 AI 模块 → 生成内容 → 查看数据 → 验证结论。
+下面是基金筛选系统的真实产品录屏：从输入基金、选择风险画像，到生成排名、查看图表和导出分析结果。这个演示比静态流程图更能体现实际交互体验。
 
-![作品集交互体验视频](./assets/interaction-demo.gif)
+![基金筛选系统真实操作演示](./assets/fund-ranking-demo.gif)
 
 <details>
 <summary>查看视频说明</summary>
 
-GIF 由项目 Demo 生成，作为 GitHub README 的兼容预览；完整网页交互仍保留在仓库中的 `index.html`。
+GIF 来自基金筛选系统的真实 Web Demo；完整作品集网页交互仍保留在仓库中的 `index.html`。
 
 </details>
 
@@ -120,6 +120,12 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 ## 09 · 公募基金风险收益评价系统
 
 **技术栈：** Python、Pandas、NumPy、AkShare、FastAPI、SQLite、Scikit-learn、Matplotlib、Docker
+
+![基金筛选系统主界面](./assets/fund-ranking-dashboard.png)
+
+![基金排名与风险分析结果](./assets/fund-ranking-results.png)
+
+![基金风险收益图表](./assets/fund-ranking-chart.png)
 
 围绕“基金筛选不能只看历史收益率”，构建真实净值抓取、风险收益指标、多因子评分和 Web 分析系统。计算收益、波动、最大回撤、Sharpe、Calmar 和滚动稳定性，设计 aggressive、balanced、conservative 三类评分画像。参与基金池准入、A/C 份额去重、风险标签、因子贡献、Spearman 相关性、LIME 局部解释、机器学习辅助权重、Walk-Forward 样本外验证和组合约束。在 100 只真实基金候选池中筛选 55 只验证，并明确区分历史评价与未来收益预测。
 
