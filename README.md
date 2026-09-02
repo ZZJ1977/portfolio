@@ -41,7 +41,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 全栈开发 / AI 交互系统
 
-![AI 角色扮演平台交互界面](./assets/ai-chat-demo.svg)
+![AI 角色扮演平台操作演示](./assets/ai-chat-demo.gif)
+
+<video src="./assets/ai-chat-demo.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** React、TypeScript、FastAPI、PostgreSQL、SSE、OpenRouter、Anthropic、DeepSeek
 
@@ -61,7 +63,7 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 独立全栈项目 / 计算机视觉工具
 
-![Face Mosaic 视频处理流程](./assets/quant-research-demo.svg)
+![Face Mosaic 视频处理演示](./assets/quant-research-demo.gif)
 
 **技术栈：** Next.js、TypeScript、FastAPI、Python、OpenCV、CenterFace、Norfair、FFmpeg、PostgreSQL、Cloudflare R2、Google OAuth
 
@@ -71,7 +73,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 产品工具开发 / AI 内容生产流程
 
-![AI 短剧生产交互流程](./assets/interaction-demo.svg)
+![AI 短剧生产操作演示](./assets/dancevideo-demo.gif)
+
+<video src="./assets/dancevideo-demo.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** Next.js、TypeScript、FastAPI、Python、PostgreSQL、Redis、FFmpeg、Docker、GitHub Actions、Railway、Cloudflare Workers
 
@@ -89,7 +93,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 数据分析后台 / 用户与经营洞察
 
-![KissMe Insight 数据洞察界面](./assets/data-insight-demo.svg)
+![KissMe Insight 数据洞察操作演示](./assets/data-insight-demo.gif)
+
+<video src="./assets/data-insight-demo.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** React、TypeScript、Vite、Tailwind CSS、ECharts、FastAPI、Python、MySQL、Redis、Docker
 
@@ -99,7 +105,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 全栈开发 / 完整 AI 产品
 
-![Lumina AI 产品工作流](./assets/interaction-demo.svg)
+![Lumina AI 产品操作演示](./assets/lumina-demo.gif)
+
+<video src="./assets/lumina-demo.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** Next.js、React、TypeScript、Tailwind CSS、FastAPI、Python、SQLAlchemy、PostgreSQL、Redis、Docker、GitHub Actions、Cloudflare Workers
 
@@ -139,7 +147,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **技术栈：** Python、Pandas、NumPy、Scikit-learn、BaoStock、Streamlit、Pytest、Matplotlib
 
-![量化执行研究实验界面](./assets/quant-research-demo.svg)
+![量化执行研究操作演示](./assets/quant-research-demo.gif)
+
+<video src="./assets/quant-research-demo.mp4" controls muted loop width="100%"></video>
 
 将证券实习中接触到的机构大单执行问题转化为可运行、可验证的研究系统。围绕 TWAP、VWAP、POV、Smart-TWAP、母单拆分、分钟级撮合、市场冲击、Implementation Shortfall、机会成本和完成率建立实验框架。使用“20 日训练、下一日测试”的滚动样本外方法，发现 Smart-TWAP 使用全天信号归一化造成前视偏差，随后重构为基于剩余数量和剩余时间的因果分配，并增加回归测试。在 **30 只股票、76 个交易日、5 档母单规模、买卖双向和 3 档冲击场景**下生成 **201,600 条实验记录**，使用股票-交易日聚类 Bootstrap 计算置信区间。最终发现 Smart-TWAP 并未稳定优于 VWAP/TWAP，其表现受市场状态、波动率、母单规模和完成率影响。
 
