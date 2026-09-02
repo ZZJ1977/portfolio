@@ -4,11 +4,28 @@
 
 我擅长把复杂业务问题拆解成可运行、可验证、可持续迭代的系统：从 AI 对话模块、视频生成工具，到数据洞察后台、完整 AI 产品，再到基金研究和机构交易执行实验。
 
+![作品集交互体验总览](./assets/interaction-demo.svg)
+
+> 上图展示从“配置模块 → 生成内容 → 分析数据 → 验证结论”的工作流。仓库首页直接呈现项目图、文字简介和动态交互演示，无需跳转到其他页面。
+
 <p align="center"><a href="https://github.com/ZZJ1977/portfolio"><img src="https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github" alt="GitHub"></a> <img src="https://img.shields.io/badge/AI-Product%20Engineering-7b74ff" alt="AI Product Engineering"> <img src="https://img.shields.io/badge/Data-Platform-c9f66d" alt="Data Platform"> <img src="https://img.shields.io/badge/Quant-Research-ff744b" alt="Quant Research"></p>
 
 ## 浏览网页 Demo
 
 👉 [打开作品集网页 Demo](./index.html)
+
+### 交互体验视频（README 内直接播放）
+
+下面的动画直接展示作品集的交互路径：配置 AI 模块 → 生成内容 → 查看数据 → 验证结论。
+
+![作品集交互体验视频](./assets/interaction-demo.gif)
+
+<details>
+<summary>查看视频说明</summary>
+
+GIF 由项目 Demo 生成，作为 GitHub README 的兼容预览；完整网页交互仍保留在仓库中的 `index.html`。
+
+</details>
 
 本地预览：`python3 -m http.server 4173`，访问 <http://localhost:4173>。
 
@@ -24,6 +41,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 全栈开发 / AI 交互系统
 
+![AI 角色扮演平台交互界面](./assets/ai-chat-demo.svg)
+
 **技术栈：** React、TypeScript、FastAPI、PostgreSQL、SSE、OpenRouter、Anthropic、DeepSeek
 
 负责 AI 角色配置、提示词模块、状态机和聊天交互开发。实现多角色 CRUD、拖拽排序、触发词、状态栏、状态机、话题事件和世界书关键词匹配。根据多轮对话分析模型提示词读取顺序，将基础规则、本轮临时规则、历史对话和用户输入分层处理，解决规则互相覆盖与上下文裁剪问题。针对模型跨轮次重复表达，设计重复短语检测、动态多样性提示、相似度检测和重复段落清理。后端完整测试达到 **85 passed**。
@@ -31,6 +50,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 ## 02 · DanceVideo AI 多模态生成平台
 
 **项目类型：** 后端开发实习 / AI 产品工具
+
+![DanceVideo AI 模型与计费流程](./assets/interaction-demo.svg)
 
 **技术栈：** Python、FastAPI、PostgreSQL、SQLAlchemy、Alembic、Pytest、Redis、FFmpeg、Docker、BytePlus Ark、DashScope、Railway、Cloudflare R2
 
@@ -40,6 +61,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 独立全栈项目 / 计算机视觉工具
 
+![Face Mosaic 视频处理流程](./assets/quant-research-demo.svg)
+
 **技术栈：** Next.js、TypeScript、FastAPI、Python、OpenCV、CenterFace、Norfair、FFmpeg、PostgreSQL、Cloudflare R2、Google OAuth
 
 独立推进视频自动人脸打码工具。针对运动视频中的漏脸、遮罩漂移和马赛克抖动，对比逐帧检测与跨帧跟踪方案，采用 CenterFace + Norfair、短时漏检补帧和场景切换重检。实现视频上传、URL 导入、异步任务、实时进度、原片/结果预览、下载、用户级隔离、崩溃恢复和 R2 重试，并设计与 DanceVideo 的接口，使处理结果可以回写原有素材库。
@@ -47,6 +70,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 ## 04 · DanceVideo AI 短剧生产工具
 
 **项目类型：** 产品工具开发 / AI 内容生产流程
+
+![AI 短剧生产交互流程](./assets/interaction-demo.svg)
 
 **技术栈：** Next.js、TypeScript、FastAPI、Python、PostgreSQL、Redis、FFmpeg、Docker、GitHub Actions、Railway、Cloudflare Workers
 
@@ -64,6 +89,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 数据分析后台 / 用户与经营洞察
 
+![KissMe Insight 数据洞察界面](./assets/data-insight-demo.svg)
+
 **技术栈：** React、TypeScript、Vite、Tailwind CSS、ECharts、FastAPI、Python、MySQL、Redis、Docker
 
 负责用户 360、聊天记录、角色偏好、消费趋势、购买分析和会话语义分析的设计与开发。分析生产数据库中用户、会话、消息分片、订单和消费账本的关系；针对约 **4,190 万条消息、128 张分片表**，设计先查询会话、再通过 `CRC32(conversation_id) % 128` 定位消息表的读取方案。参与翻译、摘要、意图和需求满足度分析，强调 AI 结果必须显示置信度、模型版本和原文证据。针对翻译和语义分析响应慢的问题，改造成后台任务、缓存和轮询机制，并建立只读访问、SQL 防护、敏感访问审计和 Schema 契约校验。
@@ -71,6 +98,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 ## 07 · Lumina AI 多模态内容平台
 
 **项目类型：** 全栈开发 / 完整 AI 产品
+
+![Lumina AI 产品工作流](./assets/interaction-demo.svg)
 
 **技术栈：** Next.js、React、TypeScript、Tailwind CSS、FastAPI、Python、SQLAlchemy、PostgreSQL、Redis、Docker、GitHub Actions、Cloudflare Workers
 
@@ -103,6 +132,8 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 ## 11 · 机构交易执行算法实验平台
 
 **技术栈：** Python、Pandas、NumPy、Scikit-learn、BaoStock、Streamlit、Pytest、Matplotlib
+
+![量化执行研究实验界面](./assets/quant-research-demo.svg)
 
 将证券实习中接触到的机构大单执行问题转化为可运行、可验证的研究系统。围绕 TWAP、VWAP、POV、Smart-TWAP、母单拆分、分钟级撮合、市场冲击、Implementation Shortfall、机会成本和完成率建立实验框架。使用“20 日训练、下一日测试”的滚动样本外方法，发现 Smart-TWAP 使用全天信号归一化造成前视偏差，随后重构为基于剩余数量和剩余时间的因果分配，并增加回归测试。在 **30 只股票、76 个交易日、5 档母单规模、买卖双向和 3 档冲击场景**下生成 **201,600 条实验记录**，使用股票-交易日聚类 Bootstrap 计算置信区间。最终发现 Smart-TWAP 并未稳定优于 VWAP/TWAP，其表现受市场状态、波动率、母单规模和完成率影响。
 
