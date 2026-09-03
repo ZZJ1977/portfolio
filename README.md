@@ -41,9 +41,9 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 全栈开发 / AI 交互系统
 
-![AI 角色扮演平台操作演示](./assets/ai-chat-demo.gif)
+![AI 角色扮演平台真实操作演示](./assets/roleplay-real.gif)
 
-<video src="./assets/ai-chat-demo.mp4" controls muted loop width="100%"></video>
+<video src="./assets/roleplay-real.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** React、TypeScript、FastAPI、PostgreSQL、SSE、OpenRouter、Anthropic、DeepSeek
 
@@ -63,7 +63,7 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 独立全栈项目 / 计算机视觉工具
 
-![Face Mosaic 视频处理演示](./assets/quant-research-demo.gif)
+![Face Mosaic 视频处理页面](./assets/face-mosaic-real.png)
 
 **技术栈：** Next.js、TypeScript、FastAPI、Python、OpenCV、CenterFace、Norfair、FFmpeg、PostgreSQL、Cloudflare R2、Google OAuth
 
@@ -73,29 +73,33 @@ AI 交互模块 → 产品工具 → 管理后台 → 数据洞察后台 → 完
 
 **项目类型：** 产品工具开发 / AI 内容生产流程
 
-![AI 短剧生产操作演示](./assets/dancevideo-demo.gif)
+![AI 短剧生产真实操作演示](./assets/dancevideo-real.gif)
 
-<video src="./assets/dancevideo-demo.mp4" controls muted loop width="100%"></video>
+<video src="./assets/dancevideo-real.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** Next.js、TypeScript、FastAPI、Python、PostgreSQL、Redis、FFmpeg、Docker、GitHub Actions、Railway、Cloudflare Workers
 
 参与 DanceVideo 从单一视频生成工具向完整短剧生产工具的重构。根据产品讨论，梳理“项目设定 → AI 剧本 → 分集内容 → 角色/场景/道具/封面 → 分镜 Clip 视频”流程，参与 AI 剧本生成、分集拆分、资产复用、参考媒体校验、视频转码、审核资产库和生成历史管理。分析不同模型的输入方式、价格、分辨率、时长和连续性，推动短剧视频生成统一采用 R2V，并处理模型切换、加载速度和线上部署问题。
 
-## 05 · KissMe 管理后台
+## 05 · KissMe 产品矩阵：用户端、管理后台与 Insight
+
+**项目类型：** 完整产品矩阵 / 企业管理后台 / 数据洞察后台
+
+KissMe 由用户端、运营管理后台和 Insight 数据洞察后台组成。我在不同阶段分别参与用户侧产品迭代、存量后台维护和只读分析平台建设，覆盖从业务功能、运营配置到经营分析的完整链路。
+
+### 05.1 · KissMe 管理后台
 
 **项目类型：** 企业级管理后台 / 存量系统维护
 
-**技术栈：** Vue、Java、Spring Boot、MyBatis-Plus、MySQL、Redis、Jeecg-Boot、Maven、Docker
+**技术栈：** Vue、Java、Spring Boot、MySQL、Redis、Docker
 
 负责存量后台的功能维护、代码分析和线上问题排查。参与 Online 表单、图表、组合报表、表达式计算、动态数据源、字段级上传、卡片翻译、多应用配置和动态主题等功能。处理登录白名单、角色切换卡死、接口超时、界面中文化、Excel 数据异常和图表展示问题，逐步梳理低代码配置、前端路由、Java 接口与数据库之间的实现路径。
 
-## 06 · KissMe Insight 数据洞察后台
+### 05.2 · KissMe Insight 数据洞察后台
 
-**项目类型：** 数据分析后台 / 用户与经营洞察
+![KissMe Insight 真实操作演示](./assets/insight-real.gif)
 
-![KissMe Insight 数据洞察操作演示](./assets/data-insight-demo.gif)
-
-<video src="./assets/data-insight-demo.mp4" controls muted loop width="100%"></video>
+<video src="./assets/insight-real.mp4" controls muted loop width="100%"></video>
 
 **技术栈：** React、TypeScript、Vite、Tailwind CSS、ECharts、FastAPI、Python、MySQL、Redis、Docker
 
